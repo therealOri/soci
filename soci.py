@@ -30,7 +30,7 @@ data = se.extract(r.text)
 
 
 time = time.strftime("%b-%d-%Y_%I:%M:%S",time.localtime())
-with open(f'output_{time}.json', 'w') as oj:
+with open(f'output_{time}.json', 'w') as oj: # Could use some help with better file names. To avoid any confusion about what is in each file.
     json.dump(data, oj)
     oj.close()
     
